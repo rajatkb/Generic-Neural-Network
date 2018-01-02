@@ -5,16 +5,18 @@ The general method goes like this
 
 neural_net = gnn()
 
-neural_net.add_layer(n , "activation") // n= number of nodes in the layer activation="relu" ,"sigmoid" , "tanh" (tanh not yet done)
+neural_net.add_layer(n , "activation") <br/> 
+// n= number of nodes in the layer activation="relu" ,"sigmoid" , "tanh" (tanh not yet done)
+
 neural_net.output_layer(1 , "sigmoid")
 
 neural_net.train(X_train , Y_train , <br/>
                  epoch=1000000 , alpha=0.00001 , <br/>
                  drop_keep=1 , batches=10 , adam=[0.8,0.999,10e-8], l2=0 )
 <br/>
-Yn = neural_net.predict(X_train)
-Yn = (Yn > 0.5)
-print("Accuracy: " , accuracy(Y_train , Yn))
+Yn = neural_net.predict(X_train) <br/>
+Yn = (Yn > 0.5) <br/>
+print("Accuracy: " , accuracy(Y_train , Yn)) <br/>
 
 # Optimizations done
 1. Batch norm (yet not implemented)
