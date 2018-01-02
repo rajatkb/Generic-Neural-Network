@@ -1,6 +1,4 @@
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Work in Progress<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-# Generic-Neural-Network
+# Generic-Neural-Network  !!work in progress
 It contains my own variant of Neural Network implementation which is generic. So ya anyone who have used keras should be able to understand how it works. It allows you to add layers and then run the test
 
 The general method goes like this
@@ -18,7 +16,7 @@ Yn = neural_net.predict(X_train)
 Yn = (Yn > 0.5)
 print("Accuracy: " , accuracy(Y_train , Yn))
 
-# Optimizations
+# Optimizations done
 1. Batch norm (yet not implemented)
 2. Mini Batch
 3. Adaptive Momentum (weighted average + RMS prop)
